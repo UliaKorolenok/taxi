@@ -1,0 +1,135 @@
+$yellow: #fbdd34;
+$black: #292929;
+
+.banner {
+    background-image: url(../images/backTaxiMini.png);
+    background-size: cover;
+ 
+    text-transform: none;
+    padding: 7vw 0% 2.8vw 0%;
+
+    h1 {
+        margin: 0;
+        font-size: 57px !important;
+        font-family: 'Fira';
+        letter-spacing: 1px;
+    }
+}
+
+.contact {
+    padding: 5% 7%;
+    background-color: $yellow;
+
+    h3 {
+        padding-bottom: 2%;
+        text-align: center;
+    }
+
+    p {
+        a {
+            color: black;
+            font-size: 2.5vw;
+            padding-right: 2%;
+        }
+        a:hover {
+            font-size: 3vw;
+        }
+    }
+
+    .form {
+        box-shadow: 5px 5px 10px $black;
+        margin: 0% 10%;
+        padding: 5% 10%;
+        background-color: $black;
+        color: white;
+        text-align: center;
+
+        .input_item {
+            border-bottom: 2px solid white;
+            margin-bottom: 2vw;
+        }
+
+        input,
+        textarea {
+            color: white;
+            background-color: lighten($color: $black, $amount: 0);
+            border: none;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            color: rgba(255, 255, 255, 0.64);
+
+        }
+
+        button {
+
+            background-color: $black;
+            color: white;
+            font-family: 'Fira';
+            letter-spacing: 0.5px;
+            border: 3px solid $yellow;
+            margin-top: 2%;
+            padding: 1% 4vw;
+            font-size: 16pt;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            background-color: $yellow;
+            color: $black;
+            border: 3px solid $black;
+        }
+
+        textarea {
+            height: 4vw;
+
+        }
+
+
+    }
+
+    .text-left{
+        text-align: left;
+    }
+}
+
+
+@media (max-width: 992px) {
+    .banner {
+        padding: 25vw 0% 5vw 0%;
+        h1 {
+            font-size: 28pt !important;
+        }
+    }
+
+    .contact {
+        padding: 5% 0%;
+
+        .col-6 {
+            width: 100%;
+        }
+
+
+        p {
+            a {
+                font-size: 7vw;
+            }
+        }
+
+        .form {
+            margin: 5% 1%;
+            padding: 5% 10%;
+
+            button {
+                margin-top: 5%;
+                padding: 1% 5vw;
+                font-size: 18px;
+            }
+            textarea {
+                height: 14vw;
+
+            }
+        }
+    }
+}

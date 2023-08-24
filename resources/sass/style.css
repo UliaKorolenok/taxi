@@ -1,0 +1,513 @@
+@font-face {
+  font-family: "FiraBold";
+  src: url("../fonts/FiraSans-Bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "FiraMedium";
+  src: url("../fonts/FiraSans-Medium.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Fira";
+  src: url("../fonts/FiraSans-Regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "FiraLight";
+  src: url("../fonts/FiraSans-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.logo {
+  width: 7vw;
+  padding: 0 !important;
+}
+.logo img {
+  width: 100%;
+}
+
+.logoFooter img {
+  width: 130%;
+  padding-top: 3%;
+}
+
+h1 {
+  font-size: 60pt !important;
+  font-family: "FiraBold";
+  letter-spacing: 5px;
+}
+
+h2 {
+  font-size: 42px !important;
+  font-family: "Fira";
+  letter-spacing: 1px;
+  padding-bottom: 5%;
+}
+
+h3 {
+  font-size: 28px !important;
+  font-family: "Fira";
+  letter-spacing: 0.1px;
+}
+
+div {
+  font-family: "Fira";
+  font-size: 18px;
+}
+
+.center {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+nav {
+  font-size: 18px;
+  font-family: "Fira" !important;
+  background-color: #ffed2a;
+}
+nav button {
+  background-color: #ffed2a;
+  font-family: "Fira";
+  letter-spacing: 1px;
+  border: 2px solid #292929;
+  padding: 0.2% 1vw;
+  font-size: 14pt;
+  border-radius: 15px;
+}
+nav a {
+  color: black !important;
+}
+nav li {
+  padding: 0% 1vw;
+}
+nav button:hover {
+  background-color: #292929;
+  color: white;
+}
+
+.none {
+  display: block;
+}
+
+.banner {
+  padding: 9vw 0% 5vw 0%;
+  color: white;
+  text-transform: uppercase;
+  background-color: #292929;
+}
+.banner img {
+  width: 100%;
+  margin-top: 2vw;
+}
+.banner h2 {
+  margin: 4% 0%;
+  font-size: 24px !important;
+  padding-bottom: 0;
+}
+.banner button {
+  font-family: "FiraMedium";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: white;
+  border: none;
+  padding: 0.5% 7%;
+  margin-top: 2%;
+  font-size: 20pt;
+  border-radius: 15px;
+}
+.banner button:hover {
+  background-color: #ffed2a;
+}
+.banner .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.map {
+  text-align: justify;
+  padding: 5% 0%;
+  background-color: #ffed2a;
+}
+.map #map {
+  height: 32vw;
+  padding: 0 3.5vw 0 0;
+}
+.map .inputs {
+  padding: 0 0.5vw;
+}
+.map .radioBtn {
+  padding: 0 0 0 4vw;
+}
+.map label {
+  font-family: "Fira";
+  font-size: 18px;
+  margin: 1vw 0.5vw;
+}
+.map input[type=radio],
+.map label {
+  cursor: pointer;
+}
+.map input[type=radio] {
+  position: relative;
+  height: 1vw;
+  width: 1.5vw;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+.map input[type=radio]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.6vw;
+  height: 1.6vw;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid #292929;
+}
+.map input[type=radio]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  background-color: #292929;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  visibility: visible;
+}
+.map .text {
+  padding: 0.5vw 0 0 0;
+}
+
+.tariffs {
+  padding: 5% 0;
+  background-color: #292929;
+  color: white;
+  text-align: center;
+}
+.tariffs img {
+  width: 80%;
+  margin-bottom: 2vw;
+}
+.tariffs p {
+  font-family: "FiraLight";
+  font-size: 18px;
+  padding: 0.5vw 0.5vw 0 0.5vw;
+}
+
+.order {
+  padding: 5% 0%;
+  background-color: #ffed2a;
+}
+.order h2 {
+  padding-bottom: 0;
+}
+.order ul {
+  font-size: 18px;
+  font-family: "Fira";
+  text-align: justify;
+}
+.order li {
+  position: relative;
+  padding: 3vw 0.6vw 3vw 3vw;
+  list-style-type: none;
+}
+.order li:before {
+  position: absolute;
+  width: 1.8vw;
+  height: 1.8vw;
+  border-radius: 50%;
+  background: #292929;
+  content: "";
+  left: 0;
+  top: 3.8vw;
+}
+.order li:after {
+  position: absolute;
+  border-left: 1px solid #292929;
+  width: 1px;
+  bottom: -4.5vw;
+  content: "";
+  left: 0.85vw;
+  top: 4.5vw;
+}
+.order li:last-child:after {
+  content: none !important;
+}
+.order .boxForm {
+  margin: auto 4vw auto 6vw;
+  background-color: white;
+}
+.order .boxForm .title {
+  background-color: #292929;
+  color: white;
+  text-align: center;
+  padding: 1% 0%;
+}
+.order form {
+  padding: 1vw 2vw;
+  text-align: center;
+}
+.order form .input_item {
+  margin: 1.2vw 0;
+  border-bottom: 1px solid #292929;
+}
+.order input,
+.order select {
+  border: none;
+}
+.order .color {
+  color: #ffed2a;
+}
+.order button {
+  background-color: #292929;
+  color: white;
+  font-family: "Fira";
+  letter-spacing: 1px;
+  border: none;
+  padding: 0.5% 9.5vw;
+  margin: 5% 0%;
+  font-size: 20pt;
+  border-radius: 15px;
+}
+
+.connection {
+  background-color: #292929;
+  padding: 5% 20%;
+  color: white;
+  text-align: center;
+}
+.connection h3 {
+  padding: 0% 0% 6% 0%;
+}
+.connection button {
+  background-color: #292929;
+  color: white;
+  font-family: "Fira";
+  letter-spacing: 1px;
+  border: white 2px solid;
+  font-size: 22px;
+  border-radius: 15px;
+}
+.connection input {
+  background-color: white;
+  border: white 2px solid;
+}
+.connection input:focus {
+  background-color: #292929;
+  border: #ffed2a 2px solid;
+  color: white;
+}
+
+.benefits {
+  background-color: #ffed2a;
+  padding: 5% 0%;
+  text-align: center;
+}
+.benefits .col-4 {
+  padding: 0 2vw;
+}
+.benefits img {
+  width: 7vw;
+  padding: 1vw 0;
+}
+
+footer {
+  background-color: #292929;
+}
+
+.copy {
+  background-color: #1c1c1c;
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  nav li {
+    padding: 0 0.5vw !important;
+  }
+
+  .order button {
+    padding: 0.5% 4vw;
+  }
+}
+@media (max-width: 992px) {
+  h1 {
+    font-size: 26pt !important;
+    letter-spacing: 4px;
+  }
+
+  h2 {
+    font-size: 22pt !important;
+    letter-spacing: 1px;
+    padding-bottom: 5%;
+  }
+
+  h3 {
+    font-size: 24px !important;
+    letter-spacing: 0.1px;
+  }
+
+  div {
+    font-family: "Fira";
+    font-size: 16px;
+  }
+
+  .banner {
+    background: url(../images/back.png) center center;
+    background-size: cover;
+    padding: 30vw 0% 5vw 0%;
+  }
+  .banner .col-5 {
+    width: 100%;
+    text-align: center;
+  }
+  .banner .none {
+    display: none !important;
+  }
+  .banner h2 {
+    margin: 5% 0%;
+    font-size: 16pt !important;
+  }
+  .banner button {
+    padding: 0.4% 5%;
+    margin: 5% 0;
+    font-size: 16pt;
+  }
+
+  .map {
+    padding: 10vw 0;
+  }
+  .map .col-5 {
+    width: 100%;
+  }
+  .map .col-7 {
+    display: none;
+  }
+  .map #mapM {
+    height: 80vw;
+  }
+  .map h2 {
+    padding-bottom: 2vw;
+  }
+  .map h3 {
+    font-size: 24px !important;
+  }
+  .map .radioBtn {
+    padding: 0 0 2vw 8vw;
+  }
+  .map input[type=radio] {
+    height: 3.5vw;
+    width: 4vw;
+  }
+  .map input[type=radio]::before {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+  .map input[type=radio]:checked::after {
+    width: 2vw;
+    height: 2vw;
+  }
+  .map .text {
+    padding: 5vw 0 0 0;
+    font-size: 11pt;
+  }
+
+  .tariffs {
+    padding: 10vw 0;
+  }
+  .tariffs .col-3 {
+    width: 100%;
+    padding-bottom: 10vw;
+  }
+  .tariffs .col-3:last-child {
+    padding-bottom: 0vw;
+  }
+  .tariffs img {
+    width: 60%;
+    margin-bottom: 2vw;
+  }
+  .tariffs p {
+    font-size: 16px;
+  }
+
+  .order {
+    padding: 10vw 0;
+  }
+  .order .col-6 {
+    width: 100%;
+  }
+  .order ul {
+    padding: 0;
+  }
+  .order li {
+    padding: 2vw 3vw 3vw 6vw;
+    font-size: 16px;
+  }
+  .order li:before {
+    width: 4vw;
+    height: 4vw;
+    top: 4vw;
+  }
+  .order li:after {
+    bottom: -4.5vw;
+    content: "";
+    left: 2vw;
+    top: 4.5vw;
+  }
+  .order .boxForm {
+    margin: auto 1vw;
+  }
+  .order form {
+    padding: 2vw 3vw;
+  }
+  .order button {
+    margin: 8% 0%;
+    font-size: 20px;
+  }
+
+  .connection {
+    padding: 10vw 0;
+    color: white;
+    text-align: center;
+  }
+  .connection h3 {
+    padding: 0% 0% 2% 0%;
+    font-size: 20px !important;
+    letter-spacing: 0.1px;
+  }
+  .connection .col-2,
+.connection .col-5 {
+    width: 100%;
+    padding: 3vw 10vw;
+  }
+  .connection button {
+    font-size: 20px;
+  }
+
+  .benefits {
+    padding: 10vw 0%;
+    text-align: center;
+  }
+  .benefits .col-4 {
+    width: 100%;
+    padding: 2vw 8vw;
+  }
+  .benefits img {
+    width: 17vw;
+    padding: 1vw 0;
+  }
+}

@@ -1,0 +1,96 @@
+.banner {
+  background-image: url(../images/backTaxiMini.png);
+  background-size: cover;
+  text-transform: none;
+  padding: 7vw 0% 2.8vw 0%;
+}
+.banner h1 {
+  margin: 0;
+  font-size: 57px !important;
+  font-family: "Fira";
+  letter-spacing: 1px;
+}
+
+.news {
+  background-color: #fbdd34;
+  padding: 20% 0;
+}
+
+.col-7,
+.col-5 {
+  padding: 5% 4%;
+  text-align: justify;
+}
+
+.col-5 {
+  padding: 5% 2% 5% 5%;
+}
+
+.col-7 {
+  padding: 5% 5% 5% 2%;
+}
+
+img {
+  width: 20vw;
+  padding: 2% 0;
+}
+
+.a {
+  background-color: #292929;
+  padding: 0.5vw 1.2vw;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  letter-spacing: 0.5px;
+  border: 2px solid #292929;
+}
+
+.a:hover {
+  text-decoration: none;
+  background-color: #fbdd34;
+  color: #292929;
+  border: 2.5px solid #292929;
+}
+
+.bigImage img {
+  width: 40vw;
+  padding: 5% 0;
+}
+
+.col-12 {
+  padding: 5% 0% 5% 3%;
+}
+
+@media (max-width: 992px) {
+  .banner {
+    padding: 25vw 0% 5vw 0%;
+  }
+  .banner h1 {
+    font-size: 28pt !important;
+  }
+
+  .news {
+    padding: 40% 0 20% 0%;
+  }
+
+  .col-7,
+.col-5,
+.col-12 {
+    width: 100%;
+    padding: 0% 5% 8% 5%;
+  }
+
+  .bigImage img {
+    width: 100%;
+    padding: 3% 0;
+  }
+
+  img {
+    width: 100%;
+    padding: 3% 0;
+  }
+
+  .a {
+    padding: 2.4vw 4.6vw;
+  }
+}

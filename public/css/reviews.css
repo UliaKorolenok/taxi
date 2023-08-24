@@ -1,0 +1,175 @@
+@charset "UTF-8";
+.banner {
+  background-image: url(../images/backTaxiMini.png);
+  background-size: cover;
+  text-transform: none;
+  padding: 7vw 0% 2.8vw 0%;
+}
+.banner h1 {
+  margin: 0;
+  font-size: 57px !important;
+  font-family: "Fira";
+  letter-spacing: 1px;
+}
+
+.reviews {
+  background-color: #fbdd34;
+  padding: 5% 0;
+}
+.reviews .col-7 {
+  text-align: right;
+}
+.reviews .col-7 h4 {
+  color: #fbdd34;
+}
+.reviews .col-4:first-child {
+  padding-right: 6%;
+  padding-left: 2%;
+}
+.reviews .col-4:last-child {
+  padding-left: 6%;
+  padding-right: 2%;
+}
+.reviews .col-4 {
+  padding-right: 4%;
+  padding-left: 4%;
+}
+.reviews .review {
+  height: 18vw;
+  background-color: white;
+  -webkit-box-shadow: 5px 5px 10px #292929;
+          box-shadow: 5px 5px 10px #292929;
+  background-color: #363636;
+  color: white;
+  padding: 6%;
+}
+.reviews .review p {
+  text-align: justify;
+  padding: 3% 5% 0 5%;
+}
+
+.form {
+  text-align: center;
+  padding: 5% 30%;
+}
+.form h2 {
+  padding-bottom: 2%;
+  text-align: center;
+}
+.form input,
+.form textarea {
+  margin: 2% 0;
+  background-color: white;
+}
+.form button {
+  background-color: #292929;
+  color: white;
+  font-family: "Fira";
+  letter-spacing: 0.5px;
+  border: 2px solid #292929;
+  padding: 1% 2.5vw;
+  font-size: 16pt;
+  border-radius: 10px;
+}
+.form button:hover {
+  background-color: #fbdd34;
+  color: #292929;
+  border: 2.5px solid #292929;
+}
+.form textarea {
+  height: 7vw;
+  margin-bottom: 7%;
+}
+.form .rating-area {
+  width: 483px;
+}
+.form .rating-area:not(:checked) > input {
+  display: none;
+}
+.form .rating-area:not(:checked) > label {
+  float: right;
+  width: 75px;
+  padding: 0 0%;
+  cursor: pointer;
+  font-size: 55px;
+  line-height: 60px;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px #bbb;
+}
+.form .rating-area:not(:checked) > label:before {
+  content: "★";
+}
+.form .rating-area > input:checked ~ label {
+  color: #292929;
+  text-shadow: 1.5px 1.5px rgb(255, 136, 0);
+}
+.form .rating-area:not(:checked) > label:hover,
+.form .rating-area:not(:checked) > label:hover ~ label {
+  color: #292929;
+  text-shadow: 1.5px 1.5px rgb(255, 136, 0);
+}
+.form .rating-area > input:checked + label:hover,
+.form .rating-area > input:checked + label:hover ~ label,
+.form .rating-area > input:checked ~ label:hover,
+.form .rating-area > input:checked ~ label:hover ~ label,
+.form .rating-area > label:hover ~ input:checked ~ label {
+  color: #292929;
+  text-shadow: 1.5px 1.5px rgb(255, 136, 0);
+}
+
+@media (max-width: 992px) {
+  .banner {
+    padding: 25vw 0% 5vw 0%;
+  }
+  .banner h1 {
+    font-size: 28pt !important;
+  }
+
+  .reviews .col-4, .reviews .col-4:first-child, .reviews .col-4:last-child {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .form {
+    padding: 5%;
+  }
+  .form h2 {
+    padding-bottom: 1%;
+  }
+  .form button {
+    padding: 1.5% 3.5vw;
+  }
+  .form .rating-area {
+    width: 290px;
+  }
+  .form .rating-area:not(:checked) > label {
+    width: 55px;
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+@media (max-width: 430px) {
+  .reviews .review {
+    height: 62vw;
+  }
+}
+@media (min-width: 431px) and (max-width: 520px) {
+  .reviews .review {
+    height: 50vw;
+  }
+}
+@media (min-width: 521px) and (max-width: 650px) {
+  .reviews .review {
+    height: 40vw;
+  }
+}
+@media (min-width: 651px) and (max-width: 992px) {
+  .reviews .review {
+    height: 29.5vw;
+  }
+}
+@media (min-width: 993px) and (max-width: 1400px) {
+  .reviews .review {
+    height: 30vw;
+  }
+}

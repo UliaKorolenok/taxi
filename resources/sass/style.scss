@@ -1,0 +1,885 @@
+$yellow: #fbdd34;
+$black: #292929;
+$white: white;
+
+$title: 55pt;
+$subtitle: 42px;
+$text: 18px;
+
+//$yellow: ##ffed2a;
+
+@font-face {
+    font-family: "FiraBold";
+    src: url("../fonts/FiraSans-Bold.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "FiraMedium";
+    src: url("../fonts/FiraSans-Medium.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Fira";
+    src: url("../fonts/FiraSans-Regular.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "FiraLight";
+    src: url("../fonts/FiraSans-Light.otf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+.logo {
+    width: 7vw;
+    padding: 0 !important;
+
+    img {
+        width: 100%;
+    }
+}
+
+.contact-form__message {
+    text-align: center;
+}
+
+.preloader {
+    position: relative;
+    margin: 0 0 0 45%;
+    height: 15px;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    transition: 0.3s;
+}
+
+.preloader_active {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.preloader:before {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    background: #fff30c;
+    animation: preloader_before 1.8s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.preloader:after {
+    width: 12px;
+    height: 12px;
+    left: 15%;
+    border-radius: 50%;
+    content: "";
+    position: absolute;
+    background: #f38841;
+    animation: preloader_after 1.8s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@keyframes preloader_before {
+    0% {
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(160px) scale(1.5) rotate(264deg);
+        background: #f6ee0e;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateX(0px) rotate(0deg);
+    }
+}
+
+@keyframes preloader_after {
+    0% {
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(-160px) scale(1.5) rotate(-264deg);
+        background: #f6ee0e;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+}
+
+
+.logoFooter {
+    img {
+        width: 130%;
+        padding-top: 35%;
+    }
+}
+
+h1 {
+    font-size: $title  !important;
+    font-family: 'FiraBold';
+    letter-spacing: 4px;
+}
+
+h2 {
+    font-size: $subtitle  !important;
+    font-family: 'Fira';
+    letter-spacing: 1px;
+    padding-bottom: 5%;
+}
+
+h3 {
+    font-size: 28px !important;
+    font-family: 'Fira';
+    letter-spacing: 0.1px;
+}
+
+div {
+    font-family: 'Fira';
+    font-size: $text;
+}
+
+.center {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+
+
+nav {
+    font-size: 18px;
+    font-family: 'Fira' !important;
+    background-color: $yellow;
+
+    .dropdown-menu {
+        background-color: $yellow;
+        width: 30vw;
+
+        li:hover,
+        .dropdown-item:hover {
+            background-color: $black;
+
+        }
+
+        li:hover {
+            a {
+                color: white !important;
+            }
+        }
+    }
+
+
+    button {
+        background-color: $yellow;
+        font-family: 'Fira';
+        letter-spacing: 1px;
+        border: 2px solid $black;
+        padding: 0.2% 1vw;
+        font-size: 14pt;
+        border-radius: 10px;
+    }
+
+    a {
+        color: black !important;
+    }
+
+    li {
+        padding: 0% 1vw;
+    }
+
+    button:hover {
+        background-color: $black;
+        color: $white;
+    }
+}
+
+.none {
+    display: block;
+}
+.city{
+    font-size: 22px;
+    padding-left: 8%;
+    text-decoration: underline;
+    i{
+        color: $black;
+    }
+}
+.banner {
+    padding: 12vw 0% 9vw 0%;
+    color: $white;
+    text-transform: uppercase;
+    background-color: $black;
+    background-image: url(../images/backTaxi.png);
+    background-size: cover;
+
+    img {
+        width: 100%;
+        margin-top: 2vw;
+    }
+
+    h2 {
+        margin: 4% 0%;
+        font-size: 24px !important;
+        padding-bottom: 0;
+    }
+
+    button {
+        font-family: 'FiraMedium';
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        background-color: white;
+        border: none;
+        padding: 1% 7%;
+        margin-top: 2%;
+        font-size: 20pt;
+        border-radius: 10px;
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    button:hover {
+        background-color: $yellow;
+    }
+
+    .img {
+
+        display: flex;
+        align-items: flex-end;
+    }
+
+}
+
+
+
+.map {
+    text-align: justify;
+    padding: 5% 0%;
+    background-color: $yellow;
+
+    #map {
+        height: 29.5vw;
+        padding: 0 3.5vw 0 0;
+    }
+
+    .inputs {
+        padding: 0 0.5vw;
+    }
+
+    .radioBtn {
+        padding: 0 0 0 4vw;
+    }
+
+    label {
+        font-family: 'Fira';
+        font-size: $text;
+        margin: 1vw 0.5vw;
+    }
+
+    input[type='radio'],
+    label {
+        cursor: pointer;
+    }
+
+    input[type='radio'] {
+        position: relative;
+        height: 1vw;
+        width: 1.5vw;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+    }
+
+
+    input[type='radio']::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1.6vw;
+        height: 1.6vw;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border: 2px solid $black;
+    }
+
+    input[type='radio']:checked::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 1vw;
+        height: 1vw;
+        border-radius: 50%;
+        background-color: $black;
+        transform: translate(-50%, -50%);
+        visibility: visible;
+    }
+
+    .text {
+        padding: 0.5vw 0 0 0;
+    }
+}
+
+.tariffs {
+    padding: 5% 0;
+    background-color: $black;
+    background-image: url(../images/backgroundTaxi.png);
+    background-size: cover;
+    color: $white;
+    text-align: center;
+
+    img {
+        width: 80%;
+        margin-bottom: 2vw;
+    }
+
+    p {
+        font-family: 'FiraLight';
+        font-size: $text;
+        padding: 0.5vw 0.5vw 0 0.5vw;
+    }
+    h2{
+        padding-bottom: 7%;
+    }
+
+
+}
+
+.order {
+    padding: 5% 0%;
+    background-color: $yellow;
+    text-align: justify;
+
+    h2 {
+        padding-bottom: 2%;
+    }
+
+    .price {
+        color: $black;
+    }
+
+    .price:hover {
+        color: lighten($color: $black, $amount: 20);
+    }
+
+    ul {
+        font-size: $text;
+        font-family: 'Fira';
+        text-align: justify;
+    }
+
+    li {
+        position: relative;
+        padding: 1vw 0vw 1vw 3vw;
+        list-style-type: none;
+    }
+
+    li:before {
+        position: absolute;
+        width: 1.2vw;
+        height: 1.2vw;
+        border-radius: 50%;
+        background: $black;
+        content: "";
+        left: 0;
+        top: 1.3vw;
+    }
+
+    li:after {
+        position: absolute;
+        border-left: 1px solid $black;
+        width: 1px;
+        bottom: -2vw;
+        content: "";
+        left: 0.6vw;
+        top: 1.5vw;
+    }
+
+    li:last-child:after {
+        content: none !important;
+    }
+
+    .boxForm {
+        margin: auto 0vw auto 3vw;
+
+        background-color: $white;
+
+        .title {
+            background-color: $black;
+            color: $white;
+            text-align: center;
+            padding: 1% 0%;
+        }
+    }
+
+    form {
+        padding: 1vw 2vw;
+
+        .input_item {
+            margin: 0.6vw 0;
+            border-bottom: 1px solid $black;
+        }
+
+        .input_i {
+            margin: 0.6vw 0.5vw;
+
+            p {
+                margin: 2% 0;
+            }
+        }
+
+        label {
+            padding-right: 10%;
+        }
+
+        .text {
+            text-align: justify;
+            font-size: 16px;
+            padding: 0 0.2vw;
+        }
+
+        textarea {
+            margin: 0.6vw 0.2vw 0 0.2vw;
+            width: 100%;
+        }
+    }
+
+    input,
+    select {
+        border: none;
+    }
+
+    .color {
+        color: $yellow;
+    }
+
+    button {
+        background-color: $black;
+        color: $white;
+        font-family: 'Fira';
+        letter-spacing: 1px;
+        border: 3px solid $black;
+        padding: 1% 9vw;
+        margin: 2% 0% 5% 0;
+        font-size: 18pt;
+        border-radius: 10px;
+    }
+
+    button:hover {
+        background-color: white;
+        color: black;
+        border: 3px solid $black;
+    }
+
+}
+
+.connection {
+    background-color: $black;
+    background-image: url(../images/backgroundTaxi.png);
+    background-size: cover;
+    padding: 5% 20%;
+    color: white;
+    text-align: center;
+
+    h3 {
+        padding: 0% 0% 6% 0%;
+    }
+
+    button {
+        background-color: $black;
+        color: $white;
+        font-family: 'Fira';
+        letter-spacing: 1px;
+        border: $white 2px solid;
+        font-size: 17pt;
+        border-radius: 10px;
+        padding: 1% 15%;
+    }
+
+    button:hover {
+        background-color: white;
+        color: black;
+    }
+
+    input {
+        background-color: $white;
+        border: $white 2px solid;
+
+    }
+
+    input:focus {
+        background-color: $black;
+        border: $yellow 2px solid;
+        color: $white;
+    }
+}
+
+.benefits {
+    background-color: $yellow;
+    padding: 5% 0%;
+
+    text-align: center;
+
+    .col-4 {
+        padding: 0 2vw;
+    }
+
+    img {
+        width: 7vw;
+        padding: 1vw 0;
+    }
+
+}
+
+footer {
+    background-color: $black;
+
+    .icons {
+        a {
+
+            color: white !important;
+            text-decoration: none;
+            font-size: 24px;
+            padding-right: 25px;
+        }
+
+        a:hover {
+
+            color: $yellow  !important;
+            font-size: 28px;
+        }
+    }
+}
+
+.copy {
+    background-color: darken($color: $black, $amount: 5);
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    nav {
+        li {
+            padding: 0 0.5vw !important;
+        }
+    }
+
+    .order {
+        button {
+            padding: 0.5% 4vw;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .city{
+        padding-right: 2%;
+        padding-top: 2%;
+        font-size: 13pt;
+    }
+
+    .logo {
+        width: 23vw;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .logoFooter {
+        img {
+            width: 35%;
+            padding-top: 0%;
+        }
+    }
+
+    footer {
+        .mb-4 {
+            margin-bottom: 0.2rem !important;
+        }
+    }
+
+    h1 {
+        font-size: 26pt !important;
+        letter-spacing: 4px;
+    }
+
+    h2 {
+        font-size: 22pt !important;
+        letter-spacing: 1px;
+        padding-bottom: 5%;
+    }
+
+    h3 {
+        font-size: 24px !important;
+        letter-spacing: 0.1px;
+    }
+
+    div {
+        font-family: 'Fira';
+        font-size: 16px;
+    }
+
+    nav {
+        .dropdown-menu {
+            width: 90vw;
+        }
+    }
+
+    .banner {
+     
+        background-size: cover;
+
+        .col-6 {
+            width: 100%;
+            text-align: center;
+        }
+
+        padding: 33vw 0% 9vw 0%;
+
+        .none {
+            display: none !important;
+        }
+
+        h2 {
+            margin: 5% 0%;
+            font-size: 16pt !important;
+        }
+
+        button {
+            padding: 0.4% 5%;
+            margin: 5% 0;
+            font-size: 16pt;
+
+        }
+    }
+
+    .map {
+        padding: 10vw 0;
+
+        .col-5 {
+            width: 100%;
+        }
+
+        .col-7 {
+            display: none;
+        }
+
+        #mapM {
+            height: 80vw;
+        }
+
+        h2 {
+            padding-bottom: 2vw;
+        }
+
+        h3 {
+            font-size: 24px !important;
+        }
+
+        .radioBtn {
+            padding: 0 0 2vw 8vw;
+        }
+
+        input[type='radio'] {
+            height: 3.5vw;
+            width: 4vw;
+        }
+
+        input[type='radio']::before {
+            width: 4.5vw;
+            height: 4.5vw;
+        }
+
+        input[type='radio']:checked::after {
+            width: 2vw;
+            height: 2vw;
+        }
+
+        .text {
+            padding: 5vw 0 0 0;
+            font-size: 11pt;
+        }
+
+    }
+
+
+    .tariffs {
+        padding: 10vw 0;
+
+        .col-3 {
+            width: 100%;
+            padding-bottom: 10vw;
+        }
+
+        .col-3:last-child {
+            padding-bottom: 0vw;
+        }
+
+        img {
+            width: 60%;
+            margin-bottom: 2vw;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+    }
+
+
+    .order {
+        padding: 10vw 0;
+
+        .col-7,
+        .col-5 {
+            width: 100%;
+        }
+
+        ul {
+            padding: 0;
+        }
+
+        li {
+            padding: 2vw 3vw 3vw 6vw;
+            font-size: 16px;
+        }
+
+        li:before {
+            width: 4vw;
+            height: 4vw;
+            top: 4vw;
+        }
+
+        li:after {
+
+            bottom: -4.5vw;
+            content: "";
+            left: 2vw;
+            top: 4.5vw;
+        }
+
+        .boxForm {
+            margin: auto 1vw;
+        }
+
+        form {
+            padding: 2vw 3vw;
+
+            .col {
+                width: 50%;
+            }
+
+            .radio {
+                padding-top: 2%;
+                padding-bottom: 2%;
+                width: 50%;
+
+                p {
+                    font-size: 15px !important;
+                }
+            }
+
+            .text {
+                font-size: 15px !important;
+                padding-top: 2%;
+            }
+        }
+
+        button {
+            font-size: 20px;
+        }
+    }
+
+    .connection {
+
+        padding: 10vw 0;
+        color: white;
+        text-align: center;
+
+        h3 {
+            padding: 0% 0% 2% 0%;
+            font-size: 20px !important;
+            letter-spacing: 0.1px;
+        }
+
+        .col-2,
+        .col-5 {
+            width: 100%;
+            padding: 3vw 10vw;
+        }
+
+        button {
+            font-size: 20px;
+        }
+
+    }
+
+    .benefits {
+        padding: 10vw 0%;
+        text-align: center;
+
+        .col-4 {
+            width: 100%;
+            padding: 2vw 8vw;
+        }
+
+        img {
+            width: 17vw;
+            padding: 1vw 0;
+        }
+
+    }
+
+}
+
+
+.register,
+.login {
+    padding: 10% 20%;
+    background-color: $yellow;
+}
+
+.error404 {
+    padding: 18% 0% 13% 0%;
+    background-color: $yellow;
+
+    a {
+        background-color: $black;
+        color: white !important;
+        font-family: 'Fira';
+        letter-spacing: 0.5px;
+        border: 4px solid $black;
+        padding: 0.8% 1.5vw;
+        font-size: 25px;
+        border-radius: 10px;
+    }
+
+    a:hover {
+        background-color: $yellow;
+        color: black !important;
+
+    }
+
+    p {
+        font-size: 60px;
+        text-align: center;
+    }
+
+}

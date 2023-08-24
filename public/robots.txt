@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /js/
+Disallow: /css/
+Disallow: /login.php
+Disallow: /register.php
+Disallow: /home.php
+Disallow: /errors

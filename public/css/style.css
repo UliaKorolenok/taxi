@@ -1,0 +1,769 @@
+@font-face {
+  font-family: "FiraBold";
+  src: url("../fonts/FiraSans-Bold.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "FiraMedium";
+  src: url("../fonts/FiraSans-Medium.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Fira";
+  src: url("../fonts/FiraSans-Regular.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "FiraLight";
+  src: url("../fonts/FiraSans-Light.otf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.logo {
+  width: 7vw;
+  padding: 0 !important;
+}
+.logo img {
+  width: 100%;
+}
+
+.contact-form__message {
+  text-align: center;
+}
+
+.preloader {
+  position: relative;
+  margin: 0 0 0 45%;
+  height: 15px;
+  visibility: hidden;
+  opacity: 0;
+  display: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.preloader_active {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.preloader:before {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  background: #fff30c;
+  -webkit-animation: preloader_before 1.8s infinite cubic-bezier(0.4, 0, 0.2, 1);
+          animation: preloader_before 1.8s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.preloader:after {
+  width: 12px;
+  height: 12px;
+  left: 15%;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+  background: #f38841;
+  -webkit-animation: preloader_after 1.8s infinite cubic-bezier(0.4, 0, 0.2, 1);
+          animation: preloader_after 1.8s infinite cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@-webkit-keyframes preloader_before {
+  0% {
+    -webkit-transform: translateX(0px) rotate(0deg);
+            transform: translateX(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateX(160px) scale(1.5) rotate(264deg);
+            transform: translateX(160px) scale(1.5) rotate(264deg);
+    background: #f6ee0e;
+    border-radius: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px) rotate(0deg);
+            transform: translateX(0px) rotate(0deg);
+  }
+}
+
+@keyframes preloader_before {
+  0% {
+    -webkit-transform: translateX(0px) rotate(0deg);
+            transform: translateX(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateX(160px) scale(1.5) rotate(264deg);
+            transform: translateX(160px) scale(1.5) rotate(264deg);
+    background: #f6ee0e;
+    border-radius: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px) rotate(0deg);
+            transform: translateX(0px) rotate(0deg);
+  }
+}
+@-webkit-keyframes preloader_after {
+  0% {
+    -webkit-transform: translateX(0px) rotate(0deg);
+            transform: translateX(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateX(-160px) scale(1.5) rotate(-264deg);
+            transform: translateX(-160px) scale(1.5) rotate(-264deg);
+    background: #f6ee0e;
+    border-radius: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+@keyframes preloader_after {
+  0% {
+    -webkit-transform: translateX(0px) rotate(0deg);
+            transform: translateX(0px) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translateX(-160px) scale(1.5) rotate(-264deg);
+            transform: translateX(-160px) scale(1.5) rotate(-264deg);
+    background: #f6ee0e;
+    border-radius: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+.logoFooter img {
+  width: 130%;
+  padding-top: 35%;
+}
+
+h1 {
+  font-size: 55pt !important;
+  font-family: "FiraBold";
+  letter-spacing: 4px;
+}
+
+h2 {
+  font-size: 42px !important;
+  font-family: "Fira";
+  letter-spacing: 1px;
+  padding-bottom: 5%;
+}
+
+h3 {
+  font-size: 28px !important;
+  font-family: "Fira";
+  letter-spacing: 0.1px;
+}
+
+div {
+  font-family: "Fira";
+  font-size: 18px;
+}
+
+.center {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+nav {
+  font-size: 18px;
+  font-family: "Fira" !important;
+  background-color: #fbdd34;
+}
+nav .dropdown-menu {
+  background-color: #fbdd34;
+  width: 30vw;
+}
+nav .dropdown-menu li:hover,
+nav .dropdown-menu .dropdown-item:hover {
+  background-color: #292929;
+}
+nav .dropdown-menu li:hover a {
+  color: white !important;
+}
+nav button {
+  background-color: #fbdd34;
+  font-family: "Fira";
+  letter-spacing: 1px;
+  border: 2px solid #292929;
+  padding: 0.2% 1vw;
+  font-size: 14pt;
+  border-radius: 10px;
+}
+nav a {
+  color: black !important;
+}
+nav li {
+  padding: 0% 1vw;
+}
+nav button:hover {
+  background-color: #292929;
+  color: white;
+}
+
+.none {
+  display: block;
+}
+
+.city {
+  font-size: 22px;
+  padding-left: 8%;
+  text-decoration: underline;
+}
+.city i {
+  color: #292929;
+}
+
+.banner {
+  padding: 12vw 0% 9vw 0%;
+  color: white;
+  text-transform: uppercase;
+  background-color: #292929;
+  background-image: url(../images/backTaxi.png);
+  background-size: cover;
+}
+.banner img {
+  width: 100%;
+  margin-top: 2vw;
+}
+.banner h2 {
+  margin: 4% 0%;
+  font-size: 24px !important;
+  padding-bottom: 0;
+}
+.banner button {
+  font-family: "FiraMedium";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background-color: white;
+  border: none;
+  padding: 1% 7%;
+  margin-top: 2%;
+  font-size: 20pt;
+  border-radius: 10px;
+}
+.banner button a {
+  text-decoration: none;
+  color: black;
+}
+.banner button:hover {
+  background-color: #fbdd34;
+}
+.banner .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.map {
+  text-align: justify;
+  padding: 5% 0%;
+  background-color: #fbdd34;
+}
+.map #map {
+  height: 29.5vw;
+  padding: 0 3.5vw 0 0;
+}
+.map .inputs {
+  padding: 0 0.5vw;
+}
+.map .radioBtn {
+  padding: 0 0 0 4vw;
+}
+.map label {
+  font-family: "Fira";
+  font-size: 18px;
+  margin: 1vw 0.5vw;
+}
+.map input[type=radio],
+.map label {
+  cursor: pointer;
+}
+.map input[type=radio] {
+  position: relative;
+  height: 1vw;
+  width: 1.5vw;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+}
+.map input[type=radio]::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1.6vw;
+  height: 1.6vw;
+  border-radius: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid #292929;
+}
+.map input[type=radio]:checked::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1vw;
+  height: 1vw;
+  border-radius: 50%;
+  background-color: #292929;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  visibility: visible;
+}
+.map .text {
+  padding: 0.5vw 0 0 0;
+}
+
+.tariffs {
+  padding: 5% 0;
+  background-color: #292929;
+  background-image: url(../images/backgroundTaxi.png);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+.tariffs img {
+  width: 80%;
+  margin-bottom: 2vw;
+}
+.tariffs p {
+  font-family: "FiraLight";
+  font-size: 18px;
+  padding: 0.5vw 0.5vw 0 0.5vw;
+}
+.tariffs h2 {
+  padding-bottom: 7%;
+}
+
+.order {
+  padding: 5% 0%;
+  background-color: #fbdd34;
+  text-align: justify;
+}
+.order h2 {
+  padding-bottom: 2%;
+}
+.order .price {
+  color: #292929;
+}
+.order .price:hover {
+  color: #5c5c5c;
+}
+.order ul {
+  font-size: 18px;
+  font-family: "Fira";
+  text-align: justify;
+}
+.order li {
+  position: relative;
+  padding: 1vw 0vw 1vw 3vw;
+  list-style-type: none;
+}
+.order li:before {
+  position: absolute;
+  width: 1.2vw;
+  height: 1.2vw;
+  border-radius: 50%;
+  background: #292929;
+  content: "";
+  left: 0;
+  top: 1.3vw;
+}
+.order li:after {
+  position: absolute;
+  border-left: 1px solid #292929;
+  width: 1px;
+  bottom: -2vw;
+  content: "";
+  left: 0.6vw;
+  top: 1.5vw;
+}
+.order li:last-child:after {
+  content: none !important;
+}
+.order .boxForm {
+  margin: auto 0vw auto 3vw;
+  background-color: white;
+}
+.order .boxForm .title {
+  background-color: #292929;
+  color: white;
+  text-align: center;
+  padding: 1% 0%;
+}
+.order form {
+  padding: 1vw 2vw;
+}
+.order form .input_item {
+  margin: 0.6vw 0;
+  border-bottom: 1px solid #292929;
+}
+.order form .input_i {
+  margin: 0.6vw 0.5vw;
+}
+.order form .input_i p {
+  margin: 2% 0;
+}
+.order form label {
+  padding-right: 10%;
+}
+.order form .text {
+  text-align: justify;
+  font-size: 16px;
+  padding: 0 0.2vw;
+}
+.order form textarea {
+  margin: 0.6vw 0.2vw 0 0.2vw;
+  width: 100%;
+}
+.order input,
+.order select {
+  border: none;
+}
+.order .color {
+  color: #fbdd34;
+}
+.order button {
+  background-color: #292929;
+  color: white;
+  font-family: "Fira";
+  letter-spacing: 1px;
+  border: 3px solid #292929;
+  padding: 1% 9vw;
+  margin: 2% 0% 5% 0;
+  font-size: 18pt;
+  border-radius: 10px;
+}
+.order button:hover {
+  background-color: white;
+  color: black;
+  border: 3px solid #292929;
+}
+
+.connection {
+  background-color: #292929;
+  background-image: url(../images/backgroundTaxi.png);
+  background-size: cover;
+  padding: 5% 20%;
+  color: white;
+  text-align: center;
+}
+.connection h3 {
+  padding: 0% 0% 6% 0%;
+}
+.connection button {
+  background-color: #292929;
+  color: white;
+  font-family: "Fira";
+  letter-spacing: 1px;
+  border: white 2px solid;
+  font-size: 17pt;
+  border-radius: 10px;
+  padding: 1% 15%;
+}
+.connection button:hover {
+  background-color: white;
+  color: black;
+}
+.connection input {
+  background-color: white;
+  border: white 2px solid;
+}
+.connection input:focus {
+  background-color: #292929;
+  border: #fbdd34 2px solid;
+  color: white;
+}
+
+.benefits {
+  background-color: #fbdd34;
+  padding: 5% 0%;
+  text-align: center;
+}
+.benefits .col-4 {
+  padding: 0 2vw;
+}
+.benefits img {
+  width: 7vw;
+  padding: 1vw 0;
+}
+
+footer {
+  background-color: #292929;
+}
+footer .icons a {
+  color: white !important;
+  text-decoration: none;
+  font-size: 24px;
+  padding-right: 25px;
+}
+footer .icons a:hover {
+  color: #fbdd34 !important;
+  font-size: 28px;
+}
+
+.copy {
+  background-color: #1c1c1c;
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  nav li {
+    padding: 0 0.5vw !important;
+  }
+
+  .order button {
+    padding: 0.5% 4vw;
+  }
+}
+@media (max-width: 992px) {
+  .city {
+    padding-right: 2%;
+    padding-top: 2%;
+    font-size: 13pt;
+  }
+
+  .logo {
+    width: 23vw;
+  }
+  .logo img {
+    width: 100%;
+  }
+
+  .logoFooter img {
+    width: 35%;
+    padding-top: 0%;
+  }
+
+  footer .mb-4 {
+    margin-bottom: 0.2rem !important;
+  }
+
+  h1 {
+    font-size: 26pt !important;
+    letter-spacing: 4px;
+  }
+
+  h2 {
+    font-size: 22pt !important;
+    letter-spacing: 1px;
+    padding-bottom: 5%;
+  }
+
+  h3 {
+    font-size: 24px !important;
+    letter-spacing: 0.1px;
+  }
+
+  div {
+    font-family: "Fira";
+    font-size: 16px;
+  }
+
+  nav .dropdown-menu {
+    width: 90vw;
+  }
+
+  .banner {
+    background-size: cover;
+    padding: 33vw 0% 9vw 0%;
+  }
+  .banner .col-6 {
+    width: 100%;
+    text-align: center;
+  }
+  .banner .none {
+    display: none !important;
+  }
+  .banner h2 {
+    margin: 5% 0%;
+    font-size: 16pt !important;
+  }
+  .banner button {
+    padding: 0.4% 5%;
+    margin: 5% 0;
+    font-size: 16pt;
+  }
+
+  .map {
+    padding: 10vw 0;
+  }
+  .map .col-5 {
+    width: 100%;
+  }
+  .map .col-7 {
+    display: none;
+  }
+  .map #mapM {
+    height: 80vw;
+  }
+  .map h2 {
+    padding-bottom: 2vw;
+  }
+  .map h3 {
+    font-size: 24px !important;
+  }
+  .map .radioBtn {
+    padding: 0 0 2vw 8vw;
+  }
+  .map input[type=radio] {
+    height: 3.5vw;
+    width: 4vw;
+  }
+  .map input[type=radio]::before {
+    width: 4.5vw;
+    height: 4.5vw;
+  }
+  .map input[type=radio]:checked::after {
+    width: 2vw;
+    height: 2vw;
+  }
+  .map .text {
+    padding: 5vw 0 0 0;
+    font-size: 11pt;
+  }
+
+  .tariffs {
+    padding: 10vw 0;
+  }
+  .tariffs .col-3 {
+    width: 100%;
+    padding-bottom: 10vw;
+  }
+  .tariffs .col-3:last-child {
+    padding-bottom: 0vw;
+  }
+  .tariffs img {
+    width: 60%;
+    margin-bottom: 2vw;
+  }
+  .tariffs p {
+    font-size: 16px;
+  }
+
+  .order {
+    padding: 10vw 0;
+  }
+  .order .col-7,
+.order .col-5 {
+    width: 100%;
+  }
+  .order ul {
+    padding: 0;
+  }
+  .order li {
+    padding: 2vw 3vw 3vw 6vw;
+    font-size: 16px;
+  }
+  .order li:before {
+    width: 4vw;
+    height: 4vw;
+    top: 4vw;
+  }
+  .order li:after {
+    bottom: -4.5vw;
+    content: "";
+    left: 2vw;
+    top: 4.5vw;
+  }
+  .order .boxForm {
+    margin: auto 1vw;
+  }
+  .order form {
+    padding: 2vw 3vw;
+  }
+  .order form .col {
+    width: 50%;
+  }
+  .order form .radio {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 50%;
+  }
+  .order form .radio p {
+    font-size: 15px !important;
+  }
+  .order form .text {
+    font-size: 15px !important;
+    padding-top: 2%;
+  }
+  .order button {
+    font-size: 20px;
+  }
+
+  .connection {
+    padding: 10vw 0;
+    color: white;
+    text-align: center;
+  }
+  .connection h3 {
+    padding: 0% 0% 2% 0%;
+    font-size: 20px !important;
+    letter-spacing: 0.1px;
+  }
+  .connection .col-2,
+.connection .col-5 {
+    width: 100%;
+    padding: 3vw 10vw;
+  }
+  .connection button {
+    font-size: 20px;
+  }
+
+  .benefits {
+    padding: 10vw 0%;
+    text-align: center;
+  }
+  .benefits .col-4 {
+    width: 100%;
+    padding: 2vw 8vw;
+  }
+  .benefits img {
+    width: 17vw;
+    padding: 1vw 0;
+  }
+}
+.register,
+.login {
+  padding: 10% 20%;
+  background-color: #fbdd34;
+}
+
+.error404 {
+  padding: 18% 0% 13% 0%;
+  background-color: #fbdd34;
+}
+.error404 a {
+  background-color: #292929;
+  color: white !important;
+  font-family: "Fira";
+  letter-spacing: 0.5px;
+  border: 4px solid #292929;
+  padding: 0.8% 1.5vw;
+  font-size: 25px;
+  border-radius: 10px;
+}
+.error404 a:hover {
+  background-color: #fbdd34;
+  color: black !important;
+}
+.error404 p {
+  font-size: 60px;
+  text-align: center;
+}

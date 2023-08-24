@@ -1,0 +1,9 @@
+.banner {
+  background: url(../images/back1.png) fixed no-repeat center center;
+  background-size: cover;
+  text-transform: none;
+}
+
+.form {
+  background-color: #ffed2a;
+}
